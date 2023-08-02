@@ -1,4 +1,4 @@
-class Vehicle
+public abstract class Vehicle
 {
     string Name;
     int Passengers;
@@ -11,7 +11,7 @@ class Vehicle
         Name = name; Color = color; Passengers = passengers; Engine = engine; Miles = 0;
     }
 
-    public void ShowInfo()
+    public virtual void ShowInfo()
     {
         Console.WriteLine($"Vehicle name: {Name}");
         Console.WriteLine($"Number of passengers: {Passengers}");
